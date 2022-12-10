@@ -2,7 +2,7 @@
 import datetime
 
 # Define the shift schedule
-SHIFT_SCHEDULE = ["day", "night", "free", "free"]
+SHIFT_SCHEDULE = ["day", "night", "free1", "free2"]
 
 # Define a function to calculate the future shift
 def future_shift(prev_date: datetime.date, prev_shift: str, future_date: datetime.date) -> str:
@@ -25,7 +25,7 @@ prev_date_input = input("Enter the previous date (YYYY-MM-DD): ")
 prev_date = datetime.datetime.strptime(prev_date_input, "%Y-%m-%d").date()
 
 # Prompt the user to enter the previous shift
-prev_shift = input("Enter the previous shift (day/night/free): ")
+prev_shift = input("Enter the previous shift (day/night/free1/free2): ")
 
 # Prompt the user to enter the future date
 future_date_input = input("Enter the future date (YYYY-MM-DD): ")
